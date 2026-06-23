@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Drum Trainer",
+  "description": "This dataset comprises electroencephalography (EEG) recordings from 21 participants learning to perform two distinct drumming patterns at three different tempos using keyboard responses. Participants received real-time visual feedback indicating response timing accuracy (early, on-time, or late) relative to target durations. The study investigates motor learning and timing control during sequential pattern acquisition, with detailed event markers capturing metronome beats, response types, and feedback outcomes across 72 trials per participant.",
+  "methods_description": "EEG data were recorded during a drumming task where participants learned two patterns (AABA and AAABAA) at three tempos (60, 100, 150 bpm). Responses were made using f and j keyboard keys. Visual feedback (colored circle, 50 ms duration) indicated response timing relative to target intervals. Trial-by-trial adaptive windows ensured approximately 50% on-time responses. Event triggers marked metronome beats, ready screens, response types (early/on-time/late), and incorrect key presses.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -9,12 +11,27 @@
     "Yan Yan": {},
     "Laurence T. Hunt": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004152.v1.1.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "motor learning"
+    },
+    {
+      "term": "timing control"
+    },
+    {
+      "term": "sequential pattern learning"
+    },
+    {
+      "term": "sensorimotor integration"
+    },
+    {
+      "term": "feedback processing"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004152",
       "identifier_type": "URL",
@@ -24,16 +41,21 @@
       "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004152",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004152.v1.1.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Neuroimaging Dataset",
   "modalities": [
     "beh",
     "eeg"
   ],
-  "resource_type_specific": "Neuroimaging Dataset",
   "sizes": [
-    "77.7 KB (2 files)"
+    "5.1 GB (71 files)"
   ],
   "formats": [
     ".eeg",
@@ -45,29 +67,8 @@
     ".tsv",
     ".vhdr",
     ".vmrk",
-    ".wav"
+    ".wav",
+    ".yml"
   ],
-  "description": "A behavioral learning dataset in which 21 participants acquired two distinct drumming patterns (AABA and AAABAA) across three tempos (60, 100, and 150 bpm) using keyboard responses with real-time visual feedback. The study examines motor sequence learning and timing adaptation through trial-by-trial performance monitoring, with 72 trials per participant across multiple experimental conditions varying pattern complexity, tempo, and hand initiation.",
-  "methods_description": "Participants performed drumming patterns using f and j keyboard keys with visual feedback (colored circle) indicating response timing (early, on time, or late) relative to target inter-response intervals. Feedback windows were adapted trial-by-trial to maintain approximately 50% on-time responses. Each trial consisted of a fixation period until response followed by a 50 ms feedback circle.",
-  "keywords": [
-    {
-      "term": "motor learning"
-    },
-    {
-      "term": "sequence learning"
-    },
-    {
-      "term": "timing"
-    },
-    {
-      "term": "behavioral task"
-    },
-    {
-      "term": "visual feedback"
-    },
-    {
-      "term": "rhythm"
-    }
-  ],
-  "source_hash": "61c7a7d0b9231f457d771a3ca7262ce8cdd6df2369b168f127b1311001835f33"
+  "source_hash": "1145deb277250ce6e5bf96fc4d5b0a2de1f66a34b14a954126bfdbc00eec5ed2"
 }
