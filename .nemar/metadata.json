@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Drum Trainer",
-  "description": "This dataset comprises electroencephalography (EEG) recordings from 21 participants learning to perform two distinct drumming patterns at three different tempos using keyboard responses. Participants received real-time visual feedback indicating response timing accuracy (early, on-time, or late) relative to target durations. The study investigates motor learning and timing control during sequential pattern acquisition, with detailed event markers capturing metronome beats, response types, and feedback outcomes across 72 trials per participant.",
-  "methods_description": "EEG data were recorded during a drumming task where participants learned two patterns (AABA and AAABAA) at three tempos (60, 100, 150 bpm). Responses were made using f and j keyboard keys. Visual feedback (colored circle, 50 ms duration) indicated response timing relative to target intervals. Trial-by-trial adaptive windows ensured approximately 50% on-time responses. Event triggers marked metronome beats, ready screens, response types (early/on-time/late), and incorrect key presses.",
+  "description": "This dataset contains behavioral and EEG data from twenty-one participants who learned to perform two drumming sequences (AABA and AAABAA) at three tempos (60, 100, and 150 bpm) using keyboard responses. Trial-by-trial visual feedback indicated timing accuracy relative to an adaptive response window, allowing investigation of motor learning and timing control. The dataset includes detailed event coding for stimulus conditions and feedback types across trials.",
+  "methods_description": "Participants performed drumming sequences by pressing the 'f' and 'j' keys in response to a fixation dot, followed by a 50 ms visual feedback circle indicating whether their response was early, on time, or late relative to an adaptive timing window. Task conditions varied by tempo (fast, medium, slow), pattern (1 or 2), and starting hand (left or right). EEG and behavioral event data were recorded with trigger codes encoding condition and feedback type.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,16 +19,16 @@
       "term": "motor learning"
     },
     {
-      "term": "timing control"
+      "term": "timing perception"
     },
     {
-      "term": "sequential pattern learning"
-    },
-    {
-      "term": "sensorimotor integration"
+      "term": "sensorimotor synchronization"
     },
     {
       "term": "feedback processing"
+    },
+    {
+      "term": "drumming task"
     }
   ],
   "related_identifiers": [
@@ -38,14 +38,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004152",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds004152.v1.1.2",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004152",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
